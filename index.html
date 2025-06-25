@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" class="transition-colors duration-300">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Felipe - Resume</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Dark mode styles */
+    body.dark-mode {
+      background-color: #111827; /* Tailwind gray-900 */
+      color: #d1d5db; /* Tailwind gray-300 */
+    }
+    body.dark-mode a {
+      color: #93c5fd; /* Tailwind blue-400 */
+    }
+    body.dark-mode header, 
+    body.dark-mode footer {
+      background-color: #1f2937; /* Tailwind gray-800 */
+      color: #d1d5db;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans transition-colors duration-300">
+
+  <!-- Header -->
+  <header class="bg-white shadow p-6 transition-colors duration-300">
+    <div class="max-w-4xl mx-auto text-center">
+      <h1 class="text-3xl font-bold">Felipe Angel III</h1>
+      <p class="text-lg text-gray-600">IT Specialist </p>
+      <div class="mt-2 text-sm text-gray-500">
+        <a href="mailto:FelipeAngel.III@Proton.me" class="hover:underline">FelipeAngel.III@Proton.me</a> · 
+        <a href="https://linkedin.com/in/fangel003" class="hover:underline">LinkedIn</a> · 
+        <a href="/resume.pdf" download class="hover:underline text-blue-500">Download Resume</a>
+      </div>
+      <!-- Toggle Button -->
+      <button id="toggleDark" class="mt-4 px-4 py-2 text-sm rounded bg-gray-200 text-gray-800 hover:bg-gray-300 transition">
+        Toggle Dark Mode
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-4xl mx-auto p-6 space-y-8">
+    <!-- About -->
+    <section>
+      <h2 class="text-2xl font-semibold mb-2">About Me</h2>
+      <p>
+        I am a passionate and deal-oriented individual, as a recent graduate in Computer Science with hands-on experience in technology, 
+	customer service, with problem-solving skills. My interests lie in the intersection of technology and human interaction- whether that’s 
+	troubleshooting hardware/software issues, improving user experiences, or building practical solutions. I thrive in solution focused environments 
+	and am constantly seeking opportunities to learn and grow my skill set. I am currently looking for a role where I can apply my technical knowledge 
+	to help deliver impactful results and continue advancing my career in the tech industry.
+      </p>
+    </section>
+
+    <!-- Skills -->
+    <section>
+      <h2 class="text-2xl font-semibold mb-2">Skills</h2>
+      <ul class="list-disc list-inside">
+        <li>Programming: Python, JavaScript, Java, Rust</li>
+        <li>Web: HTML, CSS, Tailwind</li>
+        <li>Tools: Git, Docker, Linux, Windows</li>
+	<li>Languages: English, Spanish</li>
+      </ul>
+    </section>
+
+    <!-- Experience -->
+    <section>
+      <h2 class="text-2xl font-semibold mb-2">Experience</h2>
+      <div>
+        <h3 class="text-xl font-bold">AT&T Sales Associate | Polar Marketing</h3>
+        <p class="text-sm text-gray-500">May 2025 – June 2025</p>
+        <p>I went into neighborhoods following warm leads to talk to people about the services AT&T offered; mobile plans, internet, and TV.
+	My job was to explain how these services could benefit them, answer any questions they had, and help them sign up for what worked best for their needs. 
+	I built rapport and made sure I understood what customers were looking for, so I could offer them the best solutions.
+	I met a lot of new people, and there was a real sense of accomplishment when I helped someone find exactly what they needed.</p>
+	<div>
+        
+	<h3 class="text-xl font-bold">Retail Associate | House Of Cards</h3>
+        <p class="text-sm text-gray-500">June 2024 – February 2025</p>
+        <p>Assisted a local shop owner from all sorts of manner of tasks. I kept track of inventory, restocked shelves, assisted customers with personal recommendations.
+	Helped create an inviting environment for everyone that came into the store.</p>
+	
+	<div>
+	<p>I assisted customers with product selection by providing knowledgeable and friendly service to ensure a positive shopping experience. 
+	I handled transactions efficiently, promoted ongoing sales and loyalty programs, and helped maintain a clean and organized store environment. 
+	In addition to restocking merchandise and supporting daily operations, I worked closely with team members to achieve sales goals while delivering high customer service standards.
+	</p>
+	<div>
+        
+	<h3 class="text-xl font-bold">Microsoft Concierge Ambassador | Education At Work</h3>
+        <p class="text-sm text-gray-500">May 2022 – August 2022</p>
+        <p>I was part of a team dedicated to supporting small to medium-sized businesses with a wide range of technical inquiries. 
+	A significant portion of our work involved configuring mail flow rules to help administrators mitigate and respond to malicious emails. 
+	We also assisted customers with setting up and navigating their Azure portals.
+	Our team prioritized efficiency and responsiveness, addressing assigned support tickets promptly—even when the information provided was minimal. 
+	We conducted thorough research as needed and followed up with customers to gather additional details or provide further guidance. When necessary, 
+	we utilized Microsoft Quick Assist to remotely view customer screens, allowing us to deliver more effective, hands-on support.</p>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section>
+      <h2 class="text-2xl font-semibold mb-2">Education</h2>
+      <div>
+        <h3 class="text-xl font-bold">Bachelor of Science in Computer Science |The University of Texas at El Paso (UTEP)</h3>
+        <p class="text-sm text-gray-500">Concentration: Secure Cyber Systems</p>
+	<p class="text-sm text-gray-500">Graduation Year:2024</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white text-center text-sm text-gray-500 p-4 transition-colors duration-300">
+    © 2025 Felipe Angel
+  </footer>
+
+  <!-- Dark Mode Toggle Script -->
+  <script>
+    const toggleBtn = document.getElementById('toggleDark');
+    toggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+    });
+  </script>
+
+</body>
+</html>
